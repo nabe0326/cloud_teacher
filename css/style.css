@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*全体*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px; 
+    letter-spacing: 0.4em;
+}
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+ul,
+li {
+    list-style: none;
+    font-family: 'Kiwi Maru', serif;
+}
+a {
+    text-decoration: none;
+    font-family: 'Kiwi Maru', serif;
+}
+.inner-nav a {
+    color: #7D4427;
+}
+section {
+    margin-top: 7rem;
+}
+.width {
+    width: 900px;
+    margin: 0 auto;
+}
+.container{
+    width: 92%;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.ex_text{
+    line-height: 2;
+    font-family: 'Kiwi Maru', serif;
+    color: #333333;
+    font-size: 1rem;
+}
+.sub_title{
+    font-size:1.5rem;
+    font-weight: bold;
+    font-family: 'Quicksand', 'Kiwi Maru', serif;
+    color: #7d4427;
+}
+.title {
+    font-size: 2.125rem;
+    color: #a2c523;
+    font-family: 'Kiwi Maru', serif;
+    font-weight: bold;
+}
+.top_space{
+    margin-top: 1rem;
+}
+.bottom_space{
+    margin-bottom: 1rem;
+}
+
+/* header */
+.header {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
