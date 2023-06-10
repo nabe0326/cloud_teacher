@@ -22,22 +22,25 @@
 </head>
 
 <body>
-    <header>
-        <div class="header_box width flex">
-            <div class="header_logo">
-                <div class="header_logo_img">
-                    <h1><a href="<?php echo esc_url(home_url('/')); ?>index"><img src="<?php echo get_template_directory_uri() ?>/img/cloudK3.jpg" alt="logo"></a></h1>
-                </div>
+    <header id="header">
+        <div class="width flex header_box">
+            <h1><a href="<?php echo esc_url(home_url('/')); ?>index"><img class="logo" src="<?php echo get_template_directory_uri() ?>/img/cloudK3.jpg" width="100" height="56" alt="logo"></a></h1>
+            <nav>
+                <ul id="navi">
+                    <li class="menu-list"><a href="<?php echo esc_url(home_url('/')); ?>index">HOME</a></li>
+                    <li class="menu-list"><a href="<?php echo esc_url(home_url('/')); ?>company">会社概要</a></li>
+                    <li class="menu-list"><a href="<?php echo esc_url(home_url('/')); ?>contact">お問い合わせ</a></li>
+                    <li class="menu-list"><a href="<?php echo esc_url(home_url('/')); ?>contact">ブログ</a></li>
+                </ul>
+            </nav>
+            <!-- ボタン部分ここを後で追加するだけ-->
+            <div class="nav_btn" id="nav_btn">
+                <span class="hamburger_line hamburger_line1"></span>
+                <span class="hamburger_line hamburger_line2"></span>
+                <span class="hamburger_line hamburger_line3"></span>
             </div>
-            <div class="header_nav">
-                <nav>
-                    <ul class="flex">
-                        <li><a href="<?php echo esc_url(home_url('/')); ?>index">HOME</a></li>
-                        <li><a href="<?php echo esc_url(home_url('/')); ?>company">会社概要</a></li>
-                        <li><a href="<?php echo esc_url(home_url('/')); ?>contact">お問い合わせ</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <div class="nav_bg" id="nav_bg"></div>
+            <!-- /ボタン部分ここを後で追加するだけ-->
         </div>
     </header>
 </body>
